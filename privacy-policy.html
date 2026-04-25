@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — ClueForge</title>
+  <meta name="description" content="Privacy Policy for the ClueForge offline escape-room generator app.">
+  <style>
+    /* Luminous (light, default) — mirrors src/theme/colors.ts `luminous` tokens */
+    :root {
+      --bg:           #FCF9F8;
+      --card:         #FFFFFF;
+      --card-alt:     #F0EDED;
+      --border:       #C8C4D6;
+      --accent:       #4234B6;
+      --accent-soft:  #5B4FCF;
+      --text-1:       #1C1B1B;
+      --text-2:       #474554;
+      --text-3:       #787585;
+      --code-bg:      #F0EDED;
+    }
+    /* Nocturnal (dark) — mirrors src/theme/colors.ts `nocturnal` tokens */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:           #131319;
+        --card:         #201F25;
+        --card-alt:     #2A2930;
+        --border:       #474552;
+        --accent:       #C5C0FF;
+        --accent-soft:  #8C84EB;
+        --text-1:       #E5E1EA;
+        --text-2:       #C8C4D4;
+        --text-3:       #928F9D;
+        --code-bg:      #201F25;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text-1);
+      font-family: -apple-system, BlinkMacSystemFont, "Space Grotesk", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      line-height: 1.65;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+    .brand {
+      color: var(--accent);
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0 0 4px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      color: var(--text-1);
+    }
+    .meta {
+      color: var(--text-3);
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    h2 {
+      font-size: 20px;
+      color: var(--accent);
+      margin-top: 32px;
+      margin-bottom: 8px;
+    }
+    h3 {
+      font-size: 16px;
+      color: var(--text-1);
+      margin-top: 20px;
+      margin-bottom: 4px;
+    }
+    p, li {
+      color: var(--text-2);
+      font-size: 16px;
+    }
+    ul, ol {
+      padding-left: 22px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    a:hover { text-decoration: none; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-top: 16px;
+    }
+    code {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      color: var(--text-3);
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p class="brand">CLUEFORGE</p>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: <strong>25 April 2026</strong> &middot; Last updated: 25 April 2026</p>
+    </header>
+
+    <p>
+      This Privacy Policy describes how the <strong>ClueForge</strong> mobile
+      application (&ldquo;the app&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) handles
+      your information. ClueForge turns any room into an escape-room experience by
+      scanning five objects with your camera, forging a chained set of riddles on your
+      device, and printing or showing QR clue cards for your friends to solve. The app
+      is designed to collect as little personal information as possible.
+    </p>
+
+    <div class="card">
+      <strong>Summary:</strong> We do not collect your name, email, phone number, or
+      location. All puzzle data, saved games, and settings live on your device. The
+      camera is used only for on-device object identification &mdash; no photos or
+      video frames ever leave your phone. The only third party that receives any data
+      is Google AdMob, which shows ads to support the app. You can review and change
+      your advertising preferences at any time from within the app, and you can request
+      deletion of any data Google may hold using the contact details below.
+    </div>
+
+    <h2>1. Information we do not collect</h2>
+    <p>We do not collect:</p>
+    <ul>
+      <li>Your name, email address, phone number, or any account credentials.</li>
+      <li>Your physical location, GPS coordinates, or precise device location.</li>
+      <li>Your microphone audio, contacts, calendar, or photo-library contents.</li>
+      <li>The camera frames ClueForge uses to identify objects &mdash; these are processed entirely on your device and are never transmitted or stored.</li>
+      <li>The content of your saved games, riddle answers, or master codes.</li>
+    </ul>
+    <p>
+      Your game session state, saved games, theme preference, font-scale setting,
+      timer default, player-count default, and print-or-screen preference are stored
+      <strong>only on your device</strong> using local key-value storage (MMKV) inside
+      the app&rsquo;s private Android sandbox. They never leave your phone. Other
+      applications on your device cannot read this data because Android&rsquo;s
+      per-app storage isolation prevents it. We do not enable additional at-rest
+      encryption beyond the protections Android already provides for sandboxed app
+      storage.
+    </p>
+
+    <h2>2. Camera access</h2>
+    <p>
+      ClueForge requires camera access to perform its core function: identifying
+      objects in your room so it can build riddles around them. We are explicit about
+      this because camera access is essential to the product, not a peripheral
+      feature.
+    </p>
+    <ul>
+      <li>Frames are processed on-device by an embedded TensorFlow Lite machine-learning model (MobileNet v1 Small, quantised, Apache-2.0 licensed).</li>
+      <li>The model file is bundled inside the app at install time. It is <strong>not</strong> downloaded over the network at any point. The app does not need an internet connection to identify objects.</li>
+      <li>Nothing from the camera feed is uploaded, transmitted, or stored beyond the brief moment the detection runs.</li>
+      <li>When you add an object, the app keeps a short in-memory freeze-frame so the confirmation screen can show you what you captured. That frame is discarded when you leave the scan flow.</li>
+    </ul>
+
+    <h2>3. Information collected by Google AdMob</h2>
+    <p>
+      ClueForge is free and supported by advertising through Google AdMob. We use up
+      to four ad formats:
+    </p>
+    <ul>
+      <li><strong>Banner ads</strong> &mdash; shown on non-gameplay screens (Home, Theme Select, Difficulty Select, Vault, Settings).</li>
+      <li><strong>Interstitial ads</strong> &mdash; shown at most once per session, at the natural loading moment between clue generation and game start.</li>
+      <li><strong>Rewarded ads</strong> &mdash; voluntary &ldquo;watch for an extra hint&rdquo; (feature-flagged for v1.1).</li>
+      <li><strong>App-open ads</strong> &mdash; shown on cold start after at least one completed game, subject to frequency caps (feature-flagged for v1.1).</li>
+    </ul>
+    <p>To serve ads and measure their performance, Google AdMob automatically collects certain technical information:</p>
+    <ul>
+      <li>
+        <strong>Advertising identifier (AAID)</strong> &mdash; a resettable, anonymous
+        ID unique to your device. You can reset or delete this from your Android
+        settings at any time.
+      </li>
+      <li>
+        <strong>IP address</strong> &mdash; used to determine approximate
+        country/region so ads can be localised, and for fraud prevention.
+      </li>
+      <li>
+        <strong>Device information</strong> &mdash; device model, OS version,
+        language, network type, and screen dimensions.
+      </li>
+      <li>
+        <strong>Ad interaction data</strong> &mdash; whether an ad was shown, viewed,
+        or tapped.
+      </li>
+    </ul>
+    <p>
+      Data collection by Google AdMob is governed by Google&rsquo;s own privacy
+      policy:
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.
+      We do not have access to your individual advertising data; we only see aggregated
+      performance reports in the AdMob console.
+    </p>
+    <p>
+      We share data with no other third parties. We do not use any analytics SDK,
+      crash-reporting SDK, social-login SDK, or attribution SDK.
+    </p>
+
+    <h3>Personalised vs non-personalised ads</h3>
+    <p>
+      <strong>Personalised ads</strong> use information about your interactions across
+      apps and websites to choose ads more relevant to you. <strong>Non-personalised
+      ads</strong> are based only on contextual signals like the app you are using,
+      your approximate location at country level, and the current time &mdash; never on
+      your past behaviour. Both formats produce ad revenue; non-personalised ads
+      typically generate less revenue per impression but show every user the same
+      pool of ads regardless of their advertising profile.
+    </p>
+
+    <h2>4. Your ad consent choices</h2>
+    <p>
+      On first launch, the app shows Google&rsquo;s consent form if you are in the
+      European Economic Area, the United Kingdom, or Switzerland. You can choose
+      between personalised ads, non-personalised ads, or (where the form offers it)
+      decline ads that use your data for personalisation.
+    </p>
+    <h3>Changing your choice later</h3>
+    <p>
+      Open the app, tap <strong>Settings</strong>, and select
+      <strong>Ads &rarr; Manage ad consent</strong>. This opens Google&rsquo;s consent
+      management form where you can change your selection at any time. The change
+      takes effect on the next ad request.
+    </p>
+    <p>
+      If the <em>Manage ad consent</em> row is greyed out, your region does not
+      currently require a consent selection under applicable regulations. You can
+      still control personalised advertising at the device level &mdash; see Section 6.
+    </p>
+
+    <h2>5. Children&rsquo;s privacy</h2>
+    <p>
+      ClueForge is rated for a general audience (ages 8+ on the Google Play age
+      rating). It is <strong>not</strong> directed at children under 13 (or the
+      equivalent minimum age in your jurisdiction). The app is not enrolled in
+      Google Play&rsquo;s Designed for Families programme.
+    </p>
+    <p>
+      We configure Google AdMob with <code>tagForChildDirectedTreatment</code> set to
+      <em>false</em> and <code>tagForUnderAgeOfConsent</code> set to <em>false</em>,
+      consistent with our age-rating decision. We do not knowingly collect personal
+      information from children under 13.
+    </p>
+    <p>
+      If you are a parent or guardian and you believe a child has used the app, you
+      may request deletion of any associated advertising data using the contact
+      details in Section 11. We will help you initiate that request with Google.
+    </p>
+
+    <h2>6. Permissions the app requests</h2>
+    <p>The app declares the following Android permissions:</p>
+    <ul>
+      <li>
+        <code>android.permission.CAMERA</code> &mdash; required for object scanning.
+        You can revoke this anytime in Android app settings; ClueForge will show a
+        recovery screen guiding you back to settings if the permission is denied.
+      </li>
+      <li>
+        <code>android.permission.VIBRATE</code> &mdash; used for haptic feedback during
+        gameplay. No data is transmitted.
+      </li>
+      <li>
+        <code>com.google.android.gms.permission.AD_ID</code> &mdash; declared
+        automatically by the Google Mobile Ads SDK so AdMob can serve ads. You can opt
+        out of personalised advertising by deleting your advertising ID in your
+        Android device&rsquo;s privacy settings (the exact path varies by Android
+        version &mdash; on Android 12 and later it is typically
+        <em>Settings &rarr; Security &amp; Privacy &rarr; Privacy &rarr; Ads</em>;
+        on earlier versions it is
+        <em>Settings &rarr; Google &rarr; Ads</em>).
+      </li>
+    </ul>
+    <p>The app does <strong>not</strong> request microphone, contacts, calendar,
+      precise or coarse location, or photo-library write permissions.</p>
+
+    <h2>7. Data retention</h2>
+    <ul>
+      <li>On-device data (saved games, settings, consent choice) remains until you uninstall the app or clear its data from Android settings.</li>
+      <li>The 500-row puzzle database shipped inside the app bundle contains no personal information; it is the same for every user.</li>
+      <li>Google AdMob retains advertising data according to Google&rsquo;s retention policy, which you can review in the Google privacy policy linked above.</li>
+    </ul>
+
+    <h2>8. How to request deletion of your data</h2>
+    <p>
+      Because all on-device data lives on your phone only, the most direct way to
+      delete everything ClueForge holds about you is to clear the app&rsquo;s storage
+      from Android settings, or to uninstall the app:
+    </p>
+    <ul>
+      <li><strong>Clear app data:</strong> <em>Settings &rarr; Apps &rarr; ClueForge &rarr; Storage &amp; cache &rarr; Clear storage</em>. This wipes saved games, settings, and your consent choice.</li>
+      <li><strong>Uninstall:</strong> long-press the app icon and choose <em>Uninstall</em>, or remove it from <em>Settings &rarr; Apps</em>. Android removes all sandboxed data automatically.</li>
+    </ul>
+    <p>
+      For deletion of advertising data Google may have associated with your
+      advertising ID, use Google&rsquo;s privacy request tool:
+      <a href="https://support.google.com/policies/troubleshooter/7575787" target="_blank" rel="noopener">https://support.google.com/policies/troubleshooter/7575787</a>.
+      We do not hold this data ourselves and cannot delete it on your behalf, but we
+      will assist with the request &mdash; contact us using the details in Section 11.
+    </p>
+
+    <h2>9. International data transfers</h2>
+    <p>
+      Google AdMob processes advertising data on infrastructure located worldwide,
+      including in the United States. When you use ClueForge from the European
+      Economic Area, the United Kingdom, or Switzerland, your data may therefore be
+      transferred to and processed in countries outside your home jurisdiction.
+    </p>
+    <p>
+      Google relies on the European Commission&rsquo;s Standard Contractual Clauses
+      and the EU-US Data Privacy Framework (where applicable) as the legal mechanism
+      for these transfers. You can read more in Google&rsquo;s
+      <a href="https://policies.google.com/privacy/frameworks" target="_blank" rel="noopener">Privacy Frameworks documentation</a>.
+    </p>
+    <p>
+      ClueForge itself does not operate any servers and does not transfer your data
+      anywhere &mdash; all on-device data stays on your device.
+    </p>
+
+    <h2>10. Your rights (GDPR, UK GDPR, CCPA/CPRA)</h2>
+    <p>If you reside in the EEA, the United Kingdom, or Switzerland, you have the right to:</p>
+    <ul>
+      <li>Access the personal information that has been collected about you.</li>
+      <li>Request correction or deletion of your personal information.</li>
+      <li>Withdraw consent for personalised advertising at any time (via the in-app <em>Manage ad consent</em> option).</li>
+      <li>Object to processing or request restriction.</li>
+      <li>Request a copy of your data in a portable format.</li>
+      <li>Lodge a complaint with your national data protection authority. A list of EU/EEA supervisory authorities is available at <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noopener">edpb.europa.eu</a>.</li>
+    </ul>
+    <p>
+      Because ClueForge itself does not collect personal data, requests regarding
+      advertising data should be directed to Google via
+      <a href="https://support.google.com/policies/troubleshooter/7575787" target="_blank" rel="noopener">Google&rsquo;s privacy request form</a>.
+      We will assist with questions; contact details below.
+    </p>
+
+    <h3>California residents (CCPA / CPRA)</h3>
+    <p>
+      If you are a California resident, you have the right to:
+    </p>
+    <ul>
+      <li>Know what categories of personal information are collected and for what purpose.</li>
+      <li>Request deletion of personal information collected about you.</li>
+      <li>Opt out of the sale or sharing of personal information for cross-context behavioural advertising.</li>
+      <li>Limit the use of sensitive personal information.</li>
+      <li>Non-discrimination for exercising any of the above rights.</li>
+    </ul>
+    <p>
+      <strong>Do Not Sell or Share My Personal Information.</strong> ClueForge does
+      not sell personal information for money. Google AdMob&rsquo;s use of advertising
+      identifiers for personalised advertising may, depending on interpretation, be
+      considered &ldquo;sharing&rdquo; under the CPRA. To opt out, open the app, tap
+      <strong>Settings &rarr; Ads &rarr; Manage ad consent</strong>, choose
+      non-personalised ads, and additionally delete your advertising ID in your
+      Android privacy settings (see Section 6). You may also email us at the address
+      below to request that we treat your account as opted-out for any future sharing.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+      For privacy questions, deletion requests, or any concerns about how this app
+      handles your data, contact us at:
+    </p>
+    <div class="card">
+      <p style="margin: 0;">
+        <strong>Email:</strong>
+        <a href="mailto:contact@foureyedgems.in">contact@foureyedgems.in</a><br>
+        <strong>Developer:</strong> Krunal Vaghela<br>
+        <strong>App package:</strong> <code>com.clueforge.app</code>
+      </p>
+    </div>
+    <p>
+      We aim to respond to verifiable requests within 30 days, in line with the
+      response windows required by GDPR (Article 12) and the CPRA.
+    </p>
+
+    <h2>12. Security</h2>
+    <p>
+      All network communication from the app &mdash; which is limited to ad serving
+      by Google AdMob &mdash; is encrypted using HTTPS. On-device storage is sandboxed
+      by Android&rsquo;s per-app isolation. We do not transmit your saved games,
+      riddle answers, or camera frames to any server. The TensorFlow Lite model and
+      the puzzle database are bundled inside the app and are not fetched over the
+      network.
+    </p>
+
+    <h2>13. Changes to this policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we do, we will change
+      the &ldquo;Last updated&rdquo; date at the top of this page. Material changes
+      will be highlighted in the app&rsquo;s release notes on the Play Store. If a
+      change materially expands the data we collect or the third parties we share it
+      with, we will surface a notice in the app on next launch.
+    </p>
+
+    <h2>14. Third-party services referenced in this policy</h2>
+    <ul>
+      <li>
+        <strong>Google AdMob</strong> &mdash;
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>,
+        <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob Program Policies</a>.
+      </li>
+      <li>
+        <strong>Google Play Services (Mobile Ads SDK)</strong> &mdash; bundled with the
+        AdMob integration; governed by the same Google privacy policy.
+      </li>
+      <li>
+        <strong>Google User Messaging Platform (UMP)</strong> &mdash; consent-form SDK
+        used for GDPR/UK/Swiss disclosure; governed by Google&rsquo;s privacy policy.
+      </li>
+      <li>
+        <strong>MobileNet v1 Small (TensorFlow Lite)</strong> &mdash; licensed under
+        Apache-2.0; runs entirely on-device, makes no network calls, bundled at install.
+      </li>
+    </ul>
+
+    <footer>
+      &copy; 2026 ClueForge. This policy is published to comply with the Google Play
+      Store Data Safety disclosure requirements and the Google AdMob publisher
+      disclosure requirement.
+    </footer>
+  </div>
+</body>
+</html>
